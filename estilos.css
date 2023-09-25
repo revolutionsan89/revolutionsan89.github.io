@@ -1,0 +1,307 @@
+*{box-sizing: border-box;
+
+}
+
+body{
+    background-image:linear-gradient(135deg,#aaecf0,#87e5ea,#dcc7f4,#cb8af6,#826bca,#962dff);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-background-size: 500%;
+    -moz-background-size: 500%;
+    -o-background-size:500%;
+    -o-animation: infinite;
+    -msn-background-size:100%;
+}
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position:100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+
+    }
+}
+
+
+.LogoTicmas {
+        max-width: 150px;
+
+    }
+
+
+/*PARA CONFIGURAR LA BARRA DE NAV, Y SUS ELEMENTOS*/
+.nav-link {
+        color: rgb(4, 4, 4);
+        font-weight: bold;
+        font-size: large;
+     }
+    
+.nav-link:hover {
+        color: rgb(246, 14, 145);
+        font-weight:600;
+        text-decoration: underline;
+        }
+    
+.nav-link:active{
+        color:#979dff;
+    }
+  
+
+
+/* Agrega una clase "hidden" al boton para ocultar la navbar */
+.hidden {
+    display: none !important;
+}
+
+/* PARA EL ESTILO DEL BOTON QUE OCULTA LA NAVBAR */
+.boton-estilo {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+/*PARA LA PARTE DE PRESENTACION O INTRODUCCION DONDE PUSE UNA IMAGEN ROSADA COMO BANNER O FONDO*/
+
+ .presentacion {
+        text-align:right;
+        color: white;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-top: 3rem;
+        padding-bottom:3rem;
+        line-height: 1.5;
+        background-color: white;
+        margin: 1rem 7rem;
+        border-radius: 20px;
+        background-image:url(imagenes/banner.jpg);        
+        background-repeat: no-repeat;        
+        position: relative; 
+        background-size:cover;}
+
+
+.comilla{
+        color: white;
+        float: right;
+        padding: 1rem 9rem;
+        font-size:3rem;
+        background-color:transparent;
+        position: relative;
+        z-index: 2;
+    }
+
+
+
+ 
+ /* PARA EL ESTILO DE LAS COLUMNAS -4 Y -8*/
+
+.col-md-4 {
+    width:8.5cm;
+    background-color: #30bcd2;
+    padding-right:2rem ;
+    padding-top: 3rem;
+    padding-left:2rem;
+    padding-bottom:3rem;
+    margin-right: 3px;
+    margin-left: 2rem;
+    border-radius: 20px;
+
+}
+
+
+.col-md-8 {
+    background-color: white;
+    margin-left:0;
+    border-radius: 20px;
+
+}
+
+/*ESTILO PARA TODA COLUMNA -12*/
+.col-12 {
+    width:96%;
+    background-color:white;
+    padding:4rem;
+    margin-top: 2rem;
+    margin-left: 0.5cm;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+
+}
+
+/*PARA EL ESTILO DE TODOS LOS SUBTITULOS DEL MAIN*/
+
+.subtitulos {
+        color: black;
+        font-size: 2rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:bold;
+        background-color:#cbdcff;
+        border-radius: 50px;
+        padding: 5px 10px;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+/*SOBRE EL ESTILO DE LOS CONTENIDOS DE CADA SUBTITULO*/
+.textointerno {
+    text-align:justify;
+    padding: 2rem;
+    font-size:large;    
+    line-height: 1.5;
+    background-color: white;
+    margin: 1rem }
+
+
+/* PARA OCULTAR EL CONTENIDOS DESPLEGABLE DE LOS SUBTITULO*/
+.contenido-desplegable {
+    display: none;
+  }  
+  
+/* COMO SE MOSTRARA EL CONTENIDO DESPLEGABLE*/
+  .contenido-desplegable.active {
+    display: block;
+  }
+
+
+
+
+
+
+/*ERA PARA ALINEAR LOS ICONOS CON EL TEXTO EN LA PARTE DE CONTACTOS*/
+
+.ordenandoIconos{
+        line-height: 2rem;
+        text-align: justify;
+        color: black;
+    }
+
+
+/*ERA PARA ALINEAR LOS ICONOS CON EL TEXTO EN PARTE DE COMPETENCIAS*/
+.lista-iconosdecompetencias {
+        text-align: justify;
+        word-spacing: 10px;
+        font-weight: bold;
+        color: black;
+    }
+
+    
+.lista-iconosdecompetencias li {
+        margin-bottom: 2rem;
+    }
+.icono{
+        color: purple;
+    }
+    
+
+
+
+
+ /* Elimina marcadores de listas desordenadas */
+
+.ordenandoIconos{
+    list-style-type: none;
+}
+
+.lista-iconosdecompetencias {
+    list-style-type: none;
+}
+
+
+
+
+
+/* PARA  IDIOMA */
+.idioma {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:2rem 2rem;
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/* Estilos de las barras simples de progreso de idioma */
+.barra {
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.español {
+    width: 100%; 
+    background-color: #3498db;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.inglesbasico {
+    width: 40%; 
+    background-color: #e74c3c; 
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*PARA LA PARTE DE REDES SOCIALES*/
+
+.list-group { 
+    --bs-list-group-bg:transparent;
+    }
+    
+    .list-group-item {
+        border:none; 
+        font-size:large;
+    }
+    
+    
+    .list-group-item:hover{
+        background-color: #cb8af6;
+    }
+    
+    .list-group-item:active {
+        background-color: #2f0347d8;
+    }
+
+
+/*BARRAS DE PROGRESO DE BOOTSTRAP EN SECCION HABILIDADES Y MANEJO DE PROGRAMAS: ES EL TIPO DE BORDE*/
+.progress {
+    height: 30px;
+    border-style:groove;
+  }
+
+/*FOOTER*/
+footer {
+    background-image:linear-gradient(135deg,#505488,#2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
+     color: #fff;
+     padding: 10px;
+     position:relative;
+     bottom: 0;
+     width: 100%;
+   }
+ 
+ 
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+   
+h3 {
+     font-size: 1rem;
+     margin-bottom: 10px;
+   }
+   
